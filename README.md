@@ -54,11 +54,11 @@ This fictional static website was built to produce a user friendly online platfo
 
 - The Basket Page allows customers to add camping equipment to their shopping basket, providing the option to save items for later checkout.
 
-![Basket page image](images/readme-photos/r6.jpeg)
+![Basket page image](images/readme-photos/r7.jpeg)
 
 
 ## [Offers and Packages Page](offer-and-packages.html)
 
 - The Offers and Packages Page displays a catalog of the most popular camping equipment available for purchase.
 
-![Offers and packages page image](images/readme-photos/r7.jpeg)
+![Offers and packages page image](images/readme-photos/r6.jpeg)
