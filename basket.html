@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail Camping Company</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Adding bootstrap5 css to the html-->
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+  <link href="cart/style.css" type="text/css" rel="stylesheet">
+  <link href="cart/css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logcol">
+        <a href="#" class="logo">RCC</a>
+        <button type="button" class="meny" onclick="menuOption()"><img src="icons/icons8-menu.svg" alt=""></button>
+      </div>
+      <div class="navigation_bar">
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="offer-and-packages.html">Offers & Packages</a>
+        <a href="basket.html" class="focused">Basket</a>
+        <form class="search_form" role="search">
+          <input class="search_input" type="search" placeholder="Search" aria-label="Search">
+          <button class="search_button" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+    <div class="container">
+      <!--  Shopping cart table wrapper  -->
+      <div id="shopping-cart">
+        <div class="txt-heading">
+          <h1>Basket cart</h1>
+        </div>
+        <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+        <table class="tbl-cart" cellpadding="10" cellspacing="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th class='text-right' width="10%">Unit Price</th>
+              <th class='text-right' width="5%">Quantity</th>
+              <th class='text-right' width="10%">Sub Total</th>
+            </tr>
+          </thead>
+          <!--  Cart table to load data on "add to cart" action -->
+          <tbody id="cartTableBody">
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="text-right">Total:</td>
+              <td id="itemCount" class="text-right" colspan="2"></td>
+              <td id="totalAmount" class="text-right"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- Product gallery shell to load HTML from JavaScript code -->
+      <div id="product-grid">
+        <div class="txt-heading">
+          <h1>Camping Products</h1>
+        </div>
+        <div id="product-item-container"></div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="cart/cart.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="bootstrap-5.3.0-alpha3-dist/js/jquery-3.2.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap-4.0.0.js"></script>
+  <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap-4.0.0.js"></script>
+  <!--Bootsrap5 Javascript-->
+  <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+  <!--Script for hiding/showing navigation bar when viewports width is less 600px or less on click of menu button-->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

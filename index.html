@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail Camping Company</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Adding bootstrap5 css to the html-->
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logcol">
+        <a href="index.html" class="logo"> RCC</a>
+        <button type="button" class="meny" onclick="menuOption()"><img src="icons/icons8-menu.svg" alt=""></button>
+      </div>
+      <div class="navigation_bar">
+        <a href="index.html" class="focused">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="offer-and-packages.html">Offers & Packages</a>
+        <a href="basket.html">Basket</a>
+        <form class="search_form" role="search">
+          <input class="search_input" type="search" placeholder="Search" aria-label="Search">
+          <button class="search_button" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="Slider">
+      <!--Start of bootstrap5 carousel slider-->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide/im1.jpg" alt="Los Angeles" class="d-block" style="width:100%;height: 78vh;">
+            <div class="carousel-caption">
+              <h3>We are Live!</h3>
+              <p>RCC is now online to make your shopping convenient</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide/im2.jpg" alt="Chicago" class="d-block" style="width:100%;height: 78vh;">
+            <div class="carousel-caption">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide/im3.jpg" alt="New York" class="d-block" style="width:100%;height: 78vh;">
+            <div class="carousel-caption">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!--End of bootstrap5 carousel slider-->
+    </section>
+    <section class="categories">
+      <h1>Shop Our Top Categories</h1>
+      <div class="cat">
+        <a href="equipment.html" class="categories-link">
+          <img src="images/view/bags.jpeg" alt="Camping bag">
+          <span>Bags</span>
+        </a>
+        <a href="furniture.html" class="categories-link">
+          <img src="images/view/chair.jpeg" alt="Camping chair">
+          <span>Camping chairs</span>
+        </a>
+        <a href="equipment.html" class="categories-link">
+          <img src="images/view/footware.jpg" alt="Camping footware">
+          <span>Footware</span>
+        </a>
+        <a href="equipment.html" class="categories-link">
+          <img src="images/view/flash2.jpeg" alt="Flashlight">
+          <span>Flashlight</span>
+        </a>
+        <a href="equipment.html" class="categories-link">
+          <img src="images/view/tentt.jpeg" alt="Tents">
+          <span>Tents</span>
+        </a>
+      </div>
+      <div class="shop-link">
+        <a href="equipment.html" class="shop-all-link">Shop all</a>
+      </div>
+    </section>
+    <section class="weather">
+      <div class="weather-text">
+        <h2>Planning on going camping today?</h2>
+        <span>Check the weather</span>
+      </div>
+      <!--Weather API div-->
+      <div class="tomorrow" data-location-id="052149" data-language="EN" data-unit-system="METRIC" data-skin="light"
+        data-widget-type="summary" style="padding-bottom:22px;position:relative;">
+        <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank"
+          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+          <img alt="Powered by the Tomorrow.io Weather API"
+            src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18">
+        </a>
+      </div>
+    </section>
+    <section class="spec-co">
+      <h1>Have you seen these yet?</h1>
+      <div class="d-inline-flex justify-content-center flex-wrap m">
+        <div class="card m-1 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+          <img src="images/specialoffers/istockphoto-1267460241-170667a.png" alt="combo set of camp gear"
+            class="card-img-top h-50 h-50">
+          <div class="card-body">
+            <h5 class="card-title">The ideal camp setup</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates!lorem10
+              lorem
+            </p>
+            <a href="offer-and-packages.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="card m-1 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+          <img src="images/specialoffers/combo.avif" alt="combo set of camp gear" class="card-img-top h-50">
+          <div class="card-body">
+            <h5 class="card-title">Simple set gear</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates!lorem10
+              lorem</p>
+            <a href="offer-and-packages.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="card m-1 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+          <img src="images/specialoffers/combo3.jpg" alt="combo set of camp gear" class="card-img-top h-50">
+          <div class="card-body">
+            <h5 class="card-title">Gathered cost effective gear</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates!lorem10
+              lorem</p>
+            <a href="offer-and-packages.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="card m-1 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+          <img src="images/specialoffers/combo2.jpg" class="card-img-top h-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">One package, all equipments</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates!lorem10
+              lorem.</p>
+            <a href="offer-and-packages.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="card m-1 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+          <img src="images/specialoffers/cookware.png" alt="combo set of camp gear" class="card-img-top h-50">
+          <div class="card-body">
+            <h5 class="card-title">Cook into nature!!</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates!lorem10
+              lorem.</p>
+            <a href="offer-and-packages.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="card m-1 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+          <img src="images/specialoffers/setup.jpg" alt="combo set of camp gear" class="card-img-top h-50">
+          <div class="card-body">
+            <h5 class="card-title">Tools for nature!</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates!lorem10
+              lorem.</p>
+            <a href="offer-and-packages.html" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum fugiat aut ratione veniam aliquam, illum,
+              quos minus dicta dolorum quasi ducimus error enim voluptatum voluptas?"</h2>
+            <div class="col-md-8 offset-md-2">
+              <img src="images/photo_2_2023-02-25_13-03-43.jpg" alt="" class="home-rev"><span
+                class="home-rev-text">Elliot Awe (@n.y.a)</span>
+            </div>
+            <a href="reviews.html" class="btn btn-outline-light float-end">Read more of this..</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location">
+      <h3>Not a fan of websites scrolling through products?</h3>
+      <div class="location-co">
+        <span>Join us at the store!</span>
+        <br>
+        <iframe class="mx auto"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508263.1093133327!2d-0.48122779830852563!3d5.595726532104957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b5b7945c3b9%3A0xec3ccd1e130a4547!2sDecathlon%20Ghana%20-%20Kawukudi!5e0!3m2!1sen!2sgh!4v1681356246934!5m2!1sen!2sgh"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-primary" style="background-color: #121212">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              About RCC
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6>
+            <p>
+              <a class="text-primary">Account</a>
+            </p>
+            <p>
+              <a class="text-primary">Become an Affiliate</a>
+            </p>
+            <p>
+              <a class="text-primary">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p>Manchester, UK</p>
+            <p>info.rcc@gmail.com</p>
+            <p></i> + 12 345 678 </p>
+            <p>+ 91 012 131 </p>
+          </div>
+        </div>
+      </section>
+      <hr class="my-3">
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2020 Copyright:
+              <a class="text-white" href="index.html">RCC</a>
+            </div>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a href="https://web.facebook.com/groups/464086677024785/"
+              class="btn btn-outline-primary text-primary btn-floating m-1" role="button">
+              <img src="icons/bootstrap-icons-1.10.4/facebook.svg" alt="Facebook link">
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/zempirecamping?s=20"
+              class="btn btn-outline-primary text-primary btn-floating m-1" role="button">
+              <img src="icons/bootstrap-icons-1.10.4/twitter.svg" alt="Twitter link">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/campingretreats/"
+              class="btn btn-outline-primary text-primary btn-floating m-1" role="button">
+              <img src="icons/bootstrap-icons-1.10.4/instagram.svg" alt="Instagram link">
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <!--Bootsrap5 Javascript-->
+  <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+  <!--Script for hiding/showing navigation bar when viewports width is less 600px or less on click of menu button-->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
